@@ -22,6 +22,7 @@ struct ExpenseSumView: View {
             AnimationValue(value: sum)
                 .font(.system(size: 28, weight: .semibold))
                 .monospacedDigit()
+            
         }
     }
 }

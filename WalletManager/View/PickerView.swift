@@ -13,7 +13,7 @@ struct PickerView: View {
     
     
     var body: some View {
-        Picker("Product", selection: selection) {
+        Picker("Expenses", selection: selection) {
             ForEach(options, id: \.name) { option in
                 Text(option.name).tag(option.tag)
             }

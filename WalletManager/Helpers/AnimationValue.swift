@@ -1,8 +1,8 @@
 //
-//  SwiftUIView.swift
+//  AnimationValue.swift
 //  WalletManager
 //
-//  Created by Алиса Третьякова on 05.02.2024.
+//  Created by Alisa Serhiienko on 05.02.2024.
 //
 
 import SwiftUI
@@ -12,8 +12,7 @@ struct AnimationValue: View, Animatable {
     
     var formatter: NumberFormatter = {
         let formatter = NumberFormatter()
-        formatter.numberStyle = .currency
-        formatter.locale = Locale(identifier: "en_CA")
+        formatter.numberStyle = .decimal
         return formatter
     }()
     
@@ -25,7 +24,7 @@ struct AnimationValue: View, Animatable {
     }
     
     var body: some View {
-        Text(formatter.string(for: value) ?? "" )
+        Text("$\(formatter.string(for: value) ?? "" )")
     }
 }
 

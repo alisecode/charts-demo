@@ -17,11 +17,11 @@ struct ExpenseBarChart: View {
             ForEach(data) { item in
                 BarMark (x: .value("Expenses", item.month), y: .value("Expenses", item.money))
                     .annotation(position: AnnotationPosition.top) {
-                        Text("\(item.money, format: .number.precision(.fractionLength(2)))")
-                            .frame(minWidth: 80)
-                            .font(.caption2)
+                        Text("\(item.money, format: .number)")
+                            .frame(minWidth: 70)
+                            .font(.system(size: 14, weight: .regular))
                     }
-                    .foregroundStyle(.blue.gradient)
+                    .foregroundStyle(.purple.gradient)
             }
         }
         .chartYScale(domain: range)

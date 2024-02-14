@@ -12,23 +12,23 @@ class ExpensesViewModel: ObservableObject {
     
     var pickerOptions = [
     ExpensePicker(name: "Income", tag: 0),
-    ExpensePicker(name: "Outcome", tag: 1)
+    ExpensePicker(name: "Expense", tag: 1)
     ]
     
     private let expenseData = [
     InOutCome(name: "Income", data: [
-        .init(month: "Jan", money: 5443),
-        .init(month: "Feb", money: 5243),
-        .init(month: "Mar", money: 7143),
-        .init(month: "Apr", money: 9143),
+        .init(month: "January", money: 6443),
+        .init(month: "February", money: 5743),
+        .init(month: "March", money: 7143),
+        .init(month: "April", money: 9143),
     ]),
     
     
-    InOutCome(name: "Outcome", data: [
-        .init(month: "Jan", money: 4343),
-        .init(month: "Feb", money: 7443),
-        .init(month: "Mar", money: 2343),
-        .init(month: "Apr", money: 4553),
+    InOutCome(name: "Expense", data: [
+        .init(month: "January", money: 3343),
+        .init(month: "February", money: 4443),
+        .init(month: "March", money: 2343),
+        .init(month: "April", money: 3553),
     ])
     
     ]

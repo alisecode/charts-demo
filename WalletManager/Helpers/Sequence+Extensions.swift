@@ -2,7 +2,7 @@
 //  Sequence+Extensions.swift
 //  WalletManager
 //
-//  Created by Алиса Третьякова on 05.02.2024.
+//  Created by Alisa Serhiienko on 05.02.2024.
 //
 
 import Foundation
